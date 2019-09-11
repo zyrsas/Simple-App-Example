@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol BaseDelegate: class {
+    func showActivity(_ message: String)
+    func hideActivity()
+    func showAlertView(title: String, message: String)
+}

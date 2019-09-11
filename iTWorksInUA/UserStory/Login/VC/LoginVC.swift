@@ -8,23 +8,61 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+final class LoginVC: BaseVC {
+    
+    // MARK: - Variables
+    
+    public weak var coordinator: LoginCoordinatorDelegate?
+    private var loginView = LoginView()
+    private let viewModel = LoginVM()
 
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginView.delegate = self
+        viewModel.bind(self)
+    }
 
-        // Do any additional setup after loading the view.
+    // MARK: - Setup
+    
+    override func setupUI() {
+        title = "Login"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func setupConstraint() {
+        view.addSubview(loginView)
+        
+        loginView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
-    */
+}
 
+extension LoginVC: LoginViewDelegate {
+    func loginButtonDidPress(withEmail email: String, _ password: String) {
+        viewModel.loginUserWithCredentials(email, password)
+    }
+    
+    func openRegistration() {
+        coordinator?.navigateToRegistrationPage()
+    }
+}
+
+extension LoginVC: LoginVMDelegate {
+    func openNotes() {
+        coordinator?.navigateToNotesPage()
+    }
+    
+    func showActivity(_ message: String) {
+        showHudView(message)
+    }
+    
+    func hideActivity() {
+        hideHudView()
+    }
+    
+    func showAlertView(title: String, message: String) {
+        showAlert(title: title, message: message)
+    }
 }

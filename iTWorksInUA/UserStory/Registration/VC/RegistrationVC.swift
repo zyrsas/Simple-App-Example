@@ -8,23 +8,57 @@
 
 import UIKit
 
-class RegistrationVC: UIViewController {
+final class RegistrationVC: BaseVC {
 
+    // MARK: - Variables
+    
+    private var registrationView = RegistrationView()
+    private let viewModel = RegistrationVM()
+    public weak var coordinator: RegistrationCoordinatorDelegate?
+
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewModel.bind(self)
+        registrationView.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Setup
+    
+    override func setupUI() {
+        title = "Registration"
     }
-    */
+    
+    override func setupConstraint() {
+        view.addSubview(registrationView)
+        
+        registrationView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+}
 
+extension RegistrationVC: RegistrationVMDelegate {
+    func openNotes() {
+        coordinator?.navigateToNotesPage()
+    }
+    
+    func showActivity(_ message: String) {
+        showHudView(message)
+    }
+    
+    func hideActivity() {
+        hideHudView()
+    }
+    
+    func showAlertView(title: String, message: String) {
+        showAlert(title: title, message: message)
+    }
+}
+
+extension RegistrationVC: RegistrationViewDelegate {
+    func registrationButtonDidPress(withEmail email: String, _ password: String, _ repeatPassword: String) {
+        viewModel.signUpUserWithCredentials(email, password, repeatPassword)
+    }
 }

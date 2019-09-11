@@ -8,23 +8,94 @@
 
 import UIKit
 
-class RegistrationView: UIViewController {
+protocol RegistrationViewDelegate: class {
+    func registrationButtonDidPress(withEmail email: String, _ password: String, _ repeatPassword: String)
+}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class RegistrationView: BaseView {
 
-        // Do any additional setup after loading the view.
+    // MARK: - Delegate
+    
+    weak var delegate: RegistrationViewDelegate?
+    
+    // MARK: - UI Elements
+    
+    lazy var registrationStackView: UIStackView = {
+        let registrationStackView = UIStackView()
+        registrationStackView.spacing = 10
+        registrationStackView.axis = .vertical
+        return registrationStackView
+    }()
+    
+    lazy var emailField: BaseTextField = {
+        let emailField = BaseTextField()
+        emailField.placeholder = "Email"
+        emailField.keyboardType = .emailAddress
+        emailField.autocapitalizationType = .none
+        return emailField
+    }()
+    
+    lazy var passwordField: BaseTextField = {
+        let passwordField = BaseTextField()
+        passwordField.placeholder = "Password"
+        passwordField.isSecureTextEntry = true
+        return passwordField
+    }()
+    
+    lazy var repeatPasswordField: BaseTextField = {
+        let passwordField = BaseTextField()
+        passwordField.placeholder = "Repeat password"
+        passwordField.isSecureTextEntry = true
+        return passwordField
+    }()
+    
+    lazy var registrationButton: UIButton = {
+        let registrationButton = UIButton()
+        registrationButton.setTitleColor(.black, for: .normal)
+        registrationButton.setTitle("Registration", for: .normal)
+        registrationButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
+        registrationButton.layer.cornerRadius = 15
+        registrationButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(registrationButtonPressed)))
+        return registrationButton
+    }()
+    
+    
+    // MARK: - Add subviews
+    
+    override func addSubViews() {
+        addSubview(registrationStackView)
+        registrationStackView.addArrangedSubview(emailField)
+        registrationStackView.addArrangedSubview(passwordField)
+        registrationStackView.addArrangedSubview(repeatPasswordField)
+        registrationStackView.addArrangedSubview(registrationButton)
+        
+        emailField.snp.makeConstraints { (make) in
+            make.height.equalTo(35)
+        }
+        
+        passwordField.snp.makeConstraints { (make) in
+            make.height.equalTo(35)
+        }
+        
+        repeatPasswordField.snp.makeConstraints { (make) in
+            make.height.equalTo(35)
+        }
+        
+        registrationStackView.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.left.equalToSuperview().offset(20)
+            make.right.equalToSuperview().offset(-20)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Actions
+    
+    @objc
+    func registrationButtonPressed() {
+        guard let delegate = delegate else { return }
+        delegate.registrationButtonDidPress(withEmail: emailField.text ?? "",
+                                            passwordField.text ?? "",
+                                            repeatPasswordField.text ?? "")
     }
-    */
-
 }

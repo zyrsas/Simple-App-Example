@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct Note {
+    struct keys {
+        static let title = "title"
+        static let body = "body"
+    }
+    
+    var id: String
+    var title: String?
+    var body: String?
+    
+    init(_ dict: [String: Any], id: String) {
+        self.id = id
+        self.title = dict[keys.title] as? String
+        self.body = dict[keys.body] as? String
+    }
+}

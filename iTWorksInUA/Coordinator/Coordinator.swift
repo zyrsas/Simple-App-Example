@@ -6,4 +6,9 @@
 //  Copyright © 2019 Sasha. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+public protocol Coordinator: class {
+    init(navigationController: UINavigationController)
+    func start()
+}

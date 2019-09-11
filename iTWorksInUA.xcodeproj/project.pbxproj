@@ -3,25 +3,73 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C1187D54AB68F0C642FE635 /* Pods_iTWorksInUA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716D5C9D11B5CB778DA2E625 /* Pods_iTWorksInUA.framework */; };
 		FA59DC352328B00700F9F46F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC342328B00700F9F46F /* AppDelegate.swift */; };
-		FA59DC372328B00700F9F46F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC362328B00700F9F46F /* ViewController.swift */; };
-		FA59DC3A2328B00700F9F46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA59DC382328B00700F9F46F /* Main.storyboard */; };
 		FA59DC3C2328B00900F9F46F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA59DC3B2328B00900F9F46F /* Assets.xcassets */; };
 		FA59DC3F2328B00900F9F46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA59DC3D2328B00900F9F46F /* LaunchScreen.storyboard */; };
+		FA59DC482328B3BF00F9F46F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA59DC472328B3BF00F9F46F /* GoogleService-Info.plist */; };
+		FA59DC592328B5FE00F9F46F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC582328B5FE00F9F46F /* BaseVC.swift */; };
+		FA59DC5B2328B6B100F9F46F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC5A2328B6B100F9F46F /* LoginVC.swift */; };
+		FA59DC5E2328BC6900F9F46F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC5D2328BC6900F9F46F /* Coordinator.swift */; };
+		FA59DC612328BD2700F9F46F /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC602328BD2700F9F46F /* LoginCoordinator.swift */; };
+		FA59DC632328BF9100F9F46F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC622328BF9100F9F46F /* LoginView.swift */; };
+		FA59DC652328BFA300F9F46F /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC642328BFA300F9F46F /* LoginVM.swift */; };
+		FA59DC672328BFD200F9F46F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC662328BFD200F9F46F /* BaseView.swift */; };
+		FA59DC692328C03500F9F46F /* BaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC682328C03500F9F46F /* BaseDelegate.swift */; };
+		FA59DC6B2328EB5900F9F46F /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC6A2328EB5900F9F46F /* BaseTextField.swift */; };
+		FA59DC6D2328EFA600F9F46F /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC6C2328EFA600F9F46F /* RegistrationVC.swift */; };
+		FA59DC6F2328EFB600F9F46F /* RegistrationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC6E2328EFB600F9F46F /* RegistrationVM.swift */; };
+		FA59DC712328EFDC00F9F46F /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC702328EFDC00F9F46F /* RegistrationView.swift */; };
+		FA59DC742328F00200F9F46F /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC732328F00200F9F46F /* RegistrationCoordinator.swift */; };
+		FA59DC7D2328F11200F9F46F /* NotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC7C2328F11200F9F46F /* NotesVC.swift */; };
+		FA59DC7F2328F11D00F9F46F /* NotesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC7E2328F11D00F9F46F /* NotesVM.swift */; };
+		FA59DC832328F13900F9F46F /* NotesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC822328F13900F9F46F /* NotesCoordinator.swift */; };
+		FA59DC902329110100F9F46F /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC8F2329110100F9F46F /* NoteDetailVC.swift */; };
+		FA59DC922329111600F9F46F /* NoteDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC912329111600F9F46F /* NoteDetailVM.swift */; };
+		FA59DC942329113700F9F46F /* NoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC932329113700F9F46F /* NoteDetailView.swift */; };
+		FA59DC962329115000F9F46F /* NoteDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC952329115000F9F46F /* NoteDetailCoordinator.swift */; };
+		FA59DC9823291E2D00F9F46F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC9723291E2D00F9F46F /* AuthService.swift */; };
+		FA59DC9A2329311000F9F46F /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC992329311000F9F46F /* FirestoreService.swift */; };
+		FA59DC9C232932A400F9F46F /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DC9B232932A400F9F46F /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F809FFE541800A6038A8BB1 /* Pods-iTWorksInUA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTWorksInUA.debug.xcconfig"; path = "Target Support Files/Pods-iTWorksInUA/Pods-iTWorksInUA.debug.xcconfig"; sourceTree = "<group>"; };
+		716D5C9D11B5CB778DA2E625 /* Pods_iTWorksInUA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTWorksInUA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CF910D817B534BFA8FFE59 /* Pods-iTWorksInUA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTWorksInUA.release.xcconfig"; path = "Target Support Files/Pods-iTWorksInUA/Pods-iTWorksInUA.release.xcconfig"; sourceTree = "<group>"; };
 		FA59DC312328B00700F9F46F /* iTWorksInUA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTWorksInUA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA59DC342328B00700F9F46F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA59DC362328B00700F9F46F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA59DC392328B00700F9F46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA59DC3B2328B00900F9F46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA59DC3E2328B00900F9F46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA59DC402328B00900F9F46F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA59DC472328B3BF00F9F46F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA59DC582328B5FE00F9F46F /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		FA59DC5A2328B6B100F9F46F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FA59DC5D2328BC6900F9F46F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FA59DC602328BD2700F9F46F /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		FA59DC622328BF9100F9F46F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA59DC642328BFA300F9F46F /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		FA59DC662328BFD200F9F46F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		FA59DC682328C03500F9F46F /* BaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
+		FA59DC6A2328EB5900F9F46F /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		FA59DC6C2328EFA600F9F46F /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
+		FA59DC6E2328EFB600F9F46F /* RegistrationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVM.swift; sourceTree = "<group>"; };
+		FA59DC702328EFDC00F9F46F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FA59DC732328F00200F9F46F /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
+		FA59DC7C2328F11200F9F46F /* NotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVC.swift; sourceTree = "<group>"; };
+		FA59DC7E2328F11D00F9F46F /* NotesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesVM.swift; sourceTree = "<group>"; };
+		FA59DC822328F13900F9F46F /* NotesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCoordinator.swift; sourceTree = "<group>"; };
+		FA59DC8F2329110100F9F46F /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		FA59DC912329111600F9F46F /* NoteDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVM.swift; sourceTree = "<group>"; };
+		FA59DC932329113700F9F46F /* NoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailView.swift; sourceTree = "<group>"; };
+		FA59DC952329115000F9F46F /* NoteDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailCoordinator.swift; sourceTree = "<group>"; };
+		FA59DC9723291E2D00F9F46F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FA59DC992329311000F9F46F /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		FA59DC9B232932A400F9F46F /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +77,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1187D54AB68F0C642FE635 /* Pods_iTWorksInUA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B479AC1D66915FE392C1FB3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				716D5C9D11B5CB778DA2E625 /* Pods_iTWorksInUA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA59DC282328B00700F9F46F = {
 			isa = PBXGroup;
 			children = (
 				FA59DC332328B00700F9F46F /* iTWorksInUA */,
 				FA59DC322328B00700F9F46F /* Products */,
+				FF2D39C9E7AD9281B07E2687 /* Pods */,
+				B479AC1D66915FE392C1FB3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +113,285 @@
 		FA59DC332328B00700F9F46F /* iTWorksInUA */ = {
 			isa = PBXGroup;
 			children = (
-				FA59DC342328B00700F9F46F /* AppDelegate.swift */,
-				FA59DC362328B00700F9F46F /* ViewController.swift */,
-				FA59DC382328B00700F9F46F /* Main.storyboard */,
-				FA59DC3B2328B00900F9F46F /* Assets.xcassets */,
-				FA59DC3D2328B00900F9F46F /* LaunchScreen.storyboard */,
-				FA59DC402328B00900F9F46F /* Info.plist */,
+				FA59DC5C2328BC4400F9F46F /* Coordinator */,
+				FA59DC562328B5A100F9F46F /* Components */,
+				FA59DC4A2328B4CF00F9F46F /* Services */,
+				FA59DC492328B4AD00F9F46F /* UserStory */,
+				FA59DC9D232950D800F9F46F /* Common */,
 			);
 			path = iTWorksInUA;
+			sourceTree = "<group>";
+		};
+		FA59DC492328B4AD00F9F46F /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC852328F16400F9F46F /* NoteDetail */,
+				FA59DC762328F0A500F9F46F /* Notes */,
+				FA59DC512328B56B00F9F46F /* Registration */,
+				FA59DC4B2328B51500F9F46F /* Login */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
+		FA59DC4A2328B4CF00F9F46F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC9723291E2D00F9F46F /* AuthService.swift */,
+				FA59DC992329311000F9F46F /* FirestoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA59DC4B2328B51500F9F46F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC4C2328B52C00F9F46F /* VC */,
+				FA59DC4D2328B53100F9F46F /* VM */,
+				FA59DC4E2328B53C00F9F46F /* View */,
+				FA59DC4F2328B54400F9F46F /* Model */,
+				FA59DC5F2328BD0100F9F46F /* Coordinator */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FA59DC4C2328B52C00F9F46F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC5A2328B6B100F9F46F /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FA59DC4D2328B53100F9F46F /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC642328BFA300F9F46F /* LoginVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		FA59DC4E2328B53C00F9F46F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC622328BF9100F9F46F /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA59DC4F2328B54400F9F46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA59DC512328B56B00F9F46F /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC552328B59500F9F46F /* VC */,
+				FA59DC542328B58D00F9F46F /* VM */,
+				FA59DC532328B58700F9F46F /* View */,
+				FA59DC522328B58000F9F46F /* Model */,
+				FA59DC722328EFE100F9F46F /* Coordinator */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		FA59DC522328B58000F9F46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA59DC532328B58700F9F46F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC702328EFDC00F9F46F /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA59DC542328B58D00F9F46F /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC6E2328EFB600F9F46F /* RegistrationVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		FA59DC552328B59500F9F46F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC6C2328EFA600F9F46F /* RegistrationVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FA59DC562328B5A100F9F46F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC572328B5B600F9F46F /* Base */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA59DC572328B5B600F9F46F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC582328B5FE00F9F46F /* BaseVC.swift */,
+				FA59DC662328BFD200F9F46F /* BaseView.swift */,
+				FA59DC682328C03500F9F46F /* BaseDelegate.swift */,
+				FA59DC6A2328EB5900F9F46F /* BaseTextField.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FA59DC5C2328BC4400F9F46F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC5D2328BC6900F9F46F /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA59DC5F2328BD0100F9F46F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC602328BD2700F9F46F /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA59DC722328EFE100F9F46F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC732328F00200F9F46F /* RegistrationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA59DC762328F0A500F9F46F /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC7B2328F0EB00F9F46F /* VC */,
+				FA59DC7A2328F0E500F9F46F /* VM */,
+				FA59DC792328F0DE00F9F46F /* View */,
+				FA59DC782328F0D700F9F46F /* Model */,
+				FA59DC772328F0CD00F9F46F /* Coordinator */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		FA59DC772328F0CD00F9F46F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC822328F13900F9F46F /* NotesCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA59DC782328F0D700F9F46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA59DC792328F0DE00F9F46F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA59DC7A2328F0E500F9F46F /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC7E2328F11D00F9F46F /* NotesVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		FA59DC7B2328F0EB00F9F46F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC7C2328F11200F9F46F /* NotesVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FA59DC852328F16400F9F46F /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC8A2328F1B400F9F46F /* VC */,
+				FA59DC892328F1AE00F9F46F /* VM */,
+				FA59DC882328F1A800F9F46F /* View */,
+				FA59DC872328F1A100F9F46F /* Model */,
+				FA59DC862328F19A00F9F46F /* Coordinator */,
+			);
+			path = NoteDetail;
+			sourceTree = "<group>";
+		};
+		FA59DC862328F19A00F9F46F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC952329115000F9F46F /* NoteDetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		FA59DC872328F1A100F9F46F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC9B232932A400F9F46F /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA59DC882328F1A800F9F46F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC932329113700F9F46F /* NoteDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA59DC892328F1AE00F9F46F /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC912329111600F9F46F /* NoteDetailVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		FA59DC8A2328F1B400F9F46F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC8F2329110100F9F46F /* NoteDetailVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		FA59DC9D232950D800F9F46F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA59DC342328B00700F9F46F /* AppDelegate.swift */,
+				FA59DC3B2328B00900F9F46F /* Assets.xcassets */,
+				FA59DC3D2328B00900F9F46F /* LaunchScreen.storyboard */,
+				FA59DC472328B3BF00F9F46F /* GoogleService-Info.plist */,
+				FA59DC402328B00900F9F46F /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FF2D39C9E7AD9281B07E2687 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F809FFE541800A6038A8BB1 /* Pods-iTWorksInUA.debug.xcconfig */,
+				79CF910D817B534BFA8FFE59 /* Pods-iTWorksInUA.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +401,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA59DC432328B00900F9F46F /* Build configuration list for PBXNativeTarget "iTWorksInUA" */;
 			buildPhases = (
+				CF5F0E7578FF1226FCAB2469 /* [CP] Check Pods Manifest.lock */,
 				FA59DC2D2328B00700F9F46F /* Sources */,
 				FA59DC2E2328B00700F9F46F /* Frameworks */,
 				FA59DC2F2328B00700F9F46F /* Resources */,
+				56FE0C07BCED49DC7C7C5263 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,34 +455,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA59DC3F2328B00900F9F46F /* LaunchScreen.storyboard in Resources */,
+				FA59DC482328B3BF00F9F46F /* GoogleService-Info.plist in Resources */,
 				FA59DC3C2328B00900F9F46F /* Assets.xcassets in Resources */,
-				FA59DC3A2328B00700F9F46F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56FE0C07BCED49DC7C7C5263 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTWorksInUA/Pods-iTWorksInUA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iTWorksInUA/Pods-iTWorksInUA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iTWorksInUA/Pods-iTWorksInUA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF5F0E7578FF1226FCAB2469 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTWorksInUA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA59DC2D2328B00700F9F46F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA59DC372328B00700F9F46F /* ViewController.swift in Sources */,
+				FA59DC612328BD2700F9F46F /* LoginCoordinator.swift in Sources */,
+				FA59DC6F2328EFB600F9F46F /* RegistrationVM.swift in Sources */,
+				FA59DC632328BF9100F9F46F /* LoginView.swift in Sources */,
+				FA59DC9A2329311000F9F46F /* FirestoreService.swift in Sources */,
+				FA59DC712328EFDC00F9F46F /* RegistrationView.swift in Sources */,
+				FA59DC7F2328F11D00F9F46F /* NotesVM.swift in Sources */,
 				FA59DC352328B00700F9F46F /* AppDelegate.swift in Sources */,
+				FA59DC9823291E2D00F9F46F /* AuthService.swift in Sources */,
+				FA59DC902329110100F9F46F /* NoteDetailVC.swift in Sources */,
+				FA59DC6B2328EB5900F9F46F /* BaseTextField.swift in Sources */,
+				FA59DC652328BFA300F9F46F /* LoginVM.swift in Sources */,
+				FA59DC742328F00200F9F46F /* RegistrationCoordinator.swift in Sources */,
+				FA59DC922329111600F9F46F /* NoteDetailVM.swift in Sources */,
+				FA59DC5E2328BC6900F9F46F /* Coordinator.swift in Sources */,
+				FA59DC7D2328F11200F9F46F /* NotesVC.swift in Sources */,
+				FA59DC942329113700F9F46F /* NoteDetailView.swift in Sources */,
+				FA59DC6D2328EFA600F9F46F /* RegistrationVC.swift in Sources */,
+				FA59DC672328BFD200F9F46F /* BaseView.swift in Sources */,
+				FA59DC962329115000F9F46F /* NoteDetailCoordinator.swift in Sources */,
+				FA59DC5B2328B6B100F9F46F /* LoginVC.swift in Sources */,
+				FA59DC9C232932A400F9F46F /* Note.swift in Sources */,
+				FA59DC832328F13900F9F46F /* NotesCoordinator.swift in Sources */,
+				FA59DC592328B5FE00F9F46F /* BaseVC.swift in Sources */,
+				FA59DC692328C03500F9F46F /* BaseDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA59DC382328B00700F9F46F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA59DC392328B00700F9F46F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA59DC3D2328B00900F9F46F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,11 +668,12 @@
 		};
 		FA59DC442328B00900F9F46F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F809FFE541800A6038A8BB1 /* Pods-iTWorksInUA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ANG6NGPE6U;
-				INFOPLIST_FILE = iTWorksInUA/Info.plist;
+				DEVELOPMENT_TEAM = 52KAJ55X3A;
+				INFOPLIST_FILE = "$(SRCROOT)/iTWorksInUA/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +687,12 @@
 		};
 		FA59DC452328B00900F9F46F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CF910D817B534BFA8FFE59 /* Pods-iTWorksInUA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ANG6NGPE6U;
-				INFOPLIST_FILE = iTWorksInUA/Info.plist;
+				DEVELOPMENT_TEAM = 52KAJ55X3A;
+				INFOPLIST_FILE = "$(SRCROOT)/iTWorksInUA/Common/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
